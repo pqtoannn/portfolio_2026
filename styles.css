@@ -986,7 +986,8 @@ ul {
 /* ==================== EDUCATION ==================== */
 .education-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /* Giảm min width xuống để chứa được 4 cột trên màn hình desktop thay vì 3 cột như lúc trước */
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 24px;
 }
 
