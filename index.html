@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phạm Quốc Toàn — IT Intern | Portfolio</title>
+    <meta name="description"
+        content="Portfolio của Phạm Quốc Toàn — Sinh viên CNTT, thực tập sinh phần mềm. Java, Python, Go, React, AI/ML." />
+    <meta property="og:title" content="Phạm Quốc Toàn — Portfolio" />
+    <meta property="og:description" content="Sinh viên CNTT, IT Intern, đam mê xây dựng sản phẩm thực tế." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>PQT<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://pqtoannn.github.io/cv/" class="nav-cv-btn" target="_blank">
+                    <i class="bi bi-file-earmark-person"></i> CV
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ==================== HERO ==================== -->
+        <section id="hero" class="hero">
+            <div class="hero-bg">
+                <img src="assets/img/hero-bg.jpg" alt="" />
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <p class="hero-greeting">Xin chào, tôi là</p>
+                <h1 class="hero-name">Phạm Quốc Toàn</h1>
+                <div class="hero-tagline">
+                    <span class="tagline-prefix">I'm a </span>
+                    <span class="typed-text" id="typedText"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+                <p class="hero-desc">
+                    Sinh viên năm cuối CNTT — Đam mê xây dựng sản phẩm thực tế từ Frontend đến Backend & AI
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="bi bi-rocket-takeoff"></i> Khám phá Portfolio
+                    </a>
+                    <a href="https://pqtoannn.github.io/cv/" class="btn btn-outline" target="_blank">
+                        <i class="bi bi-download"></i> Xem CV
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/pqtoannn" target="_blank" rel="noopener" title="GitHub"><i
+                            class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/to%C3%A0n-ph%E1%BA%A1m-1086b7382/" target="_blank"
+                        rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.facebook.com/pham.quoc.toan.344646/" target="_blank" rel="noopener"
+                        title="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="mailto:pqt190903@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                </div>
+            </div>
+            <a href="#about" class="hero-scroll">
+                <span>Scroll</span>
+                <i class="bi bi-chevron-double-down"></i>
+            </a>
+        </section>
+
+        <!-- ==================== ABOUT ==================== -->
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Giới thiệu</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image" data-aos="fade-right" data-aos-delay="200">
+                        <div class="image-wrapper">
+                            <img src="assets/img/avatar.png" alt="Phạm Quốc Toàn" />
+                            <div class="image-border"></div>
+                        </div>
+                    </div>
+                    <div class="about-content" data-aos="fade-left" data-aos-delay="300">
+                        <h3>Phạm Quốc Toàn <span class="accent">— IT Intern</span></h3>
+                        <p class="about-text">
+                            Sinh viên năm cuối ngành Công nghệ Thông tin tại <strong>Đại học Sài Gòn (K21)</strong>.
+                            Nền tảng vững chắc về <strong>Java, OOP, SQL</strong> cùng khả năng thích ứng nhanh với công
+                            nghệ mới.
+                            Có kinh nghiệm thực tế trong kiểm thử phần mềm (UAT), tài liệu hóa quy trình tại doanh
+                            nghiệp.
+                            Đặc biệt nhạy bén trong ứng dụng <strong>AI Agent</strong> (Antigravity, Claude, n8n)
+                            để tối ưu hiệu suất lập trình. Đam mê xây dựng sản phẩm thực tế từ frontend đến backend &
+                            AI.
+                        </p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <i class="bi bi-calendar3"></i>
+                                <div><span class="info-label">Ngày sinh</span><span class="info-value">19/09/2003</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="bi bi-geo-alt"></i>
+                                <div><span class="info-label">Địa chỉ</span><span class="info-value">TP. Hồ Chí
+                                        Minh</span></div>
+                            </div>
+                            <div class="info-item">
+                                <i class="bi bi-envelope"></i>
+                                <div><span class="info-label">Email</span><span
+                                        class="info-value">pqt190903@gmail.com</span></div>
+                            </div>
+                            <div class="info-item">
+                                <i class="bi bi-telephone"></i>
+                                <div><span class="info-label">SĐT</span><span class="info-value">+84 332 620 296</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                                <span class="stat-number">8+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-card" data-aos="zoom-in" data-aos-delay="500">
+                                <span class="stat-number">7+</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                            <div class="stat-card" data-aos="zoom-in" data-aos-delay="600">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Internship</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SKILLS ==================== -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Công nghệ</span>
+                    <h2 class="section-title">Skills & Tech Stack</h2>
+                    <p class="section-subtitle">Phân loại theo mức độ thành thạo — minh bạch & chuyên nghiệp</p>
+                </div>
+
+                <!-- TIER 1: Core Foundation -->
+                <div class="skill-tier" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tier-header">
+                        <span class="portfolio-tier-label portfolio-tier-core">★ Nền tảng vững</span>
+                        <span class="tier-desc">Tự code được, hiểu sâu — học chính quy tại trường & Cybersoft</span>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/Java-282C34?logo=openjdk&logoColor=007396" alt="Java"
+                                height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/OOP-282C34?logo=java&logoColor=007396" alt="OOP"
+                                height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/SQL-282C34?logo=postgresql&logoColor=4169E1" alt="SQL"
+                                height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/HTML5-282C34?logo=html5&logoColor=E34F26" alt="HTML5"
+                                height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/CSS3-282C34?logo=css3&logoColor=1572B6" alt="CSS3"
+                                height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/JavaScript-282C34?logo=javascript&logoColor=F7DF1E"
+                                alt="JavaScript" height="28" /></span>
+                        <span class="badge"><img src="https://img.shields.io/badge/Git-282C34?logo=git&logoColor=F05032"
+                                alt="Git" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/GitHub-282C34?logo=github&logoColor=white"
+                                alt="GitHub" height="28" /></span>
+                    </div>
+                </div>
+
+                <!-- TIER 2: Working Knowledge -->
+                <div class="skill-tier" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tier-header">
+                        <span class="portfolio-tier-label portfolio-tier-working">◆ Có kinh nghiệm</span>
+                        <span class="tier-desc">Đã làm dự án thực tế, hiểu cách dùng, cần tra cứu thêm</span>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/Python-282C34?logo=python&logoColor=3776AB"
+                                alt="Python" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/React-282C34?logo=react&logoColor=61DAFB" alt="React"
+                                height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/Spring_Boot-282C34?logo=springboot&logoColor=6DB33F"
+                                alt="Spring Boot" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/MySQL-282C34?logo=mysql&logoColor=4479A1" alt="MySQL"
+                                height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/Bootstrap-282C34?logo=bootstrap&logoColor=7952B3"
+                                alt="Bootstrap" height="28" /></span>
+                        <span class="badge"><img src="https://img.shields.io/badge/PHP-282C34?logo=php&logoColor=777BB4"
+                                alt="PHP" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/REST_API-282C34?logo=fastapi&logoColor=009688"
+                                alt="REST API" height="28" /></span>
+                    </div>
+                </div>
+
+                <!-- TIER 3: Explored with AI -->
+                <div class="skill-tier" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tier-header">
+                        <span class="portfolio-tier-label portfolio-tier-explored">⚡ Tiếp cận qua AI Agent</span>
+                        <span class="tier-desc">Sử dụng AI Agent (Antigravity, Claude) để xây dựng sản phẩm thực tế,
+                            hiểu kiến trúc tổng thể</span>
+                    </div>
+                    <div class="skill-badges">
+                        <span class="badge"><img src="https://img.shields.io/badge/Go-282C34?logo=go&logoColor=00ADD8"
+                                alt="Go" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/gRPC-282C34?logo=google&logoColor=4285F4" alt="gRPC"
+                                height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6"
+                                alt="TypeScript" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/Next.js-282C34?logo=nextdotjs&logoColor=white"
+                                alt="Next.js" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/Tailwind-282C34?logo=tailwindcss&logoColor=06B6D4"
+                                alt="Tailwind" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/Docker-282C34?logo=docker&logoColor=2496ED"
+                                alt="Docker" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/PhoBERT-282C34?logo=huggingface&logoColor=FFD21E"
+                                alt="PhoBERT" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/PyTorch-282C34?logo=pytorch&logoColor=EE4C2C"
+                                alt="PyTorch" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/Streamlit-282C34?logo=streamlit&logoColor=FF4B4B"
+                                alt="Streamlit" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/MongoDB-282C34?logo=mongodb&logoColor=47A248"
+                                alt="MongoDB" height="28" /></span>
+                        <span class="badge"><img
+                                src="https://img.shields.io/badge/PostgreSQL-282C34?logo=postgresql&logoColor=4169E1"
+                                alt="PostgreSQL" height="28" /></span>
+                    </div>
+                </div>
+
+                <!-- AI Development Highlight -->
+                <div class="ai-highlight" data-aos="fade-up" data-aos-delay="400">
+                    <div class="ai-highlight-content">
+                        <span class="ai-icon">🤖</span>
+                        <div>
+                            <h3>AI-Powered Development</h3>
+                            <p>Sử dụng thành thạo <strong>Antigravity, Claude Code, n8n</strong> để thiết kế yêu cầu,
+                                xây dựng sản phẩm end-to-end, đánh giá & debug kết quả. Năng lực tận dụng AI để tạo giá
+                                trị thực tế là lợi thế cạnh tranh trong ngành.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EXPERIENCE ==================== -->
+        <section id="experience" class="section experience">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Kinh nghiệm</span>
+                    <h2 class="section-title">Work Experience</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Thực tập sinh Phần mềm</h3>
+                                <span class="timeline-date"><i class="bi bi-calendar3"></i> 06/2025 – 08/2025</span>
+                            </div>
+                            <h4 class="timeline-company">
+                                <i class="bi bi-building"></i> Công ty TNHH TM-DV Trí Linh — Trung tâm Anh ngữ I-CLC
+                            </h4>
+                            <p class="timeline-location"><i class="bi bi-geo-alt"></i> TP. Hồ Chí Minh</p>
+                            <ul class="timeline-list">
+                                <li>Tiếp nhận hệ thống <strong>E-Class</strong> (PHP/CodeIgniter, MVC) — nền tảng quản
+                                    lý khóa học và lớp học trực tuyến 1-kèm-1.</li>
+                                <li>Phân tích yêu cầu, thiết kế luồng hoạt động (workflow) và wireframe UI bằng
+                                    <strong>Penpot</strong> cho module <strong>WebMeeting</strong>.
+                                </li>
+                                <li>Phát triển tính năng <strong>video call real-time</strong> giữa giáo viên và học
+                                    viên sử dụng <strong>WebRTC, PeerJS, Socket.IO, Node.js</strong>; đóng gói bằng
+                                    Docker.</li>
+                                <li>Xây dựng Signaling Server (Node.js/ExpressJS), xử lý kết nối P2P, quản lý phòng học,
+                                    chia sẻ màn hình, chat real-time.</li>
+                                <li>Tích hợp module WebMeeting vào E-Class: xây dựng Controller (PHP), tự động tạo phòng
+                                    họp khi giáo viên xác nhận, gửi thông báo + email cho học viên.</li>
+                                <li>Cấu hình TURN server (Coturn/Docker) giải quyết bài toán NAT Traversal cho kết nối
+                                    WebRTC.</li>
+                                <li>Kiểm thử chức năng, gỡ lỗi, tối ưu UX; báo cáo tiến độ hàng tuần theo quy trình
+                                    Agile/Sprint.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== PROJECTS ==================== -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Dự án</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Các dự án tiêu biểu thể hiện năng lực lập trình đa nền tảng</p>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1: Coffee Landing Page -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <img src="assets/img/projects/coffee-landing.png" alt="Coffee Precision Gear"
+                                loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://coffeeprecisiongear.vercel.app/" target="_blank" rel="noopener"
+                                    class="overlay-btn"><i class="bi bi-display"></i> Live Demo</a>
+                                <a href="https://github.com/pqtoannn/landing-page-coffee-tools" target="_blank"
+                                    rel="noopener" class="overlay-btn"><i class="bi bi-github"></i> Source</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h3 class="project-title">Coffee Precision Gear</h3><span
+                                    class="project-role role-ai">🤖 Với AI Agent</span>
+                            </div>
+                            <p class="project-desc">Landing page thương mại điện tử cao cấp cho dụng cụ cà phê, đa ngôn
+                                ngữ vi/en, responsive, animations mượt mà.</p>
+                            <div class="project-tech">
+                                <span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>shadcn/ui</span><span>i18n</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: E-commerce Backend -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="assets/img/projects/ecommerce-backend.png" alt="E-commerce Backend"
+                                loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://github.com/pqtoannn/ecommerce-backend" target="_blank" rel="noopener"
+                                    class="overlay-btn"><i class="bi bi-github"></i> Source</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h3 class="project-title">E-commerce Microservices</h3><span
+                                    class="project-role role-ai">🤖 Với AI Agent</span>
+                            </div>
+                            <p class="project-desc">Hệ thống backend microservices hoàn chỉnh: API Gateway,
+                                User/Product/Order Service, giao tiếp gRPC, JWT auth, Docker Compose.</p>
+                            <div class="project-tech">
+                                <span>Go</span><span>Gin</span><span>gRPC</span><span>PostgreSQL</span><span>Docker</span><span>JWT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Sentiment Analysis -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <img src="assets/img/projects/sentiment-analysis.png" alt="Sentiment Analysis"
+                                loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://github.com/pqtoannn/SentimentApp" target="_blank" rel="noopener"
+                                    class="overlay-btn"><i class="bi bi-github"></i> Source</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h3 class="project-title">Vietnamese Sentiment Analysis</h3><span
+                                    class="project-role role-ai">🤖 Với AI Agent</span>
+                            </div>
+                            <p class="project-desc">Phân tích cảm xúc văn bản tiếng Việt sử dụng PhoBERT Transformer. Hỗ
+                                trợ realtime và xử lý hàng loạt qua CSV.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>PhoBERT</span><span>PyTorch</span><span>Streamlit</span><span>SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Schedule Assistant -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image">
+                            <img src="assets/img/projects/schedule-assistant.png" alt="Schedule Assistant"
+                                loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://github.com/pqtoannn/Personal-Schedule-Assistant-NLP" target="_blank"
+                                    rel="noopener" class="overlay-btn"><i class="bi bi-github"></i> Source</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h3 class="project-title">Personal Schedule Assistant</h3><span
+                                    class="project-role role-ai">🤖 Với AI Agent</span>
+                            </div>
+                            <p class="project-desc">Trợ lý lịch trình cá nhân hiểu ngôn ngữ tự nhiên tiếng Việt. Tự động
+                                trích xuất sự kiện, thời gian, địa điểm, nhắc nhở.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>NLP</span><span>Underthesea</span><span>Streamlit</span><span>SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Social Media -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-image">
+                            <img src="assets/img/projects/social-media.png" alt="Social Media Platform"
+                                loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://github.com/pqtoannn/Project_SocialMedia" target="_blank" rel="noopener"
+                                    class="overlay-btn"><i class="bi bi-github"></i> Source</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h3 class="project-title">Social Media Platform</h3><span
+                                    class="project-role role-collab">👥 Đồ án nhóm</span>
+                            </div>
+                            <p class="project-desc">Mạng xã hội fullstack: đăng bài, bình luận, like, kết bạn, nhắn tin
+                                realtime WebSocket, xác thực JWT.</p>
+                            <div class="project-tech">
+                                <span>React</span><span>Spring
+                                    Boot</span><span>MySQL</span><span>MongoDB</span><span>WebSocket</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: PhisEmailApp -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="project-image">
+                            <img src="assets/img/projects/phisemailapp.jpg" alt="PhisEmailApp" loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://github.com/pqtoannn/PhisEmailApp" target="_blank" rel="noopener"
+                                    class="overlay-btn"><i class="bi bi-github"></i> Source</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h3 class="project-title">PhisEmailApp — Spam Detection</h3><span
+                                    class="project-role role-ai">🤖 Với AI Agent</span>
+                            </div>
+                            <p class="project-desc">Ứng dụng desktop Gmail tích hợp AI phát hiện email lừa đảo/spam.
+                                Đăng nhập OAuth2, phân loại tự động với confidence score.</p>
+                            <div class="project-tech">
+                                <span>Python</span><span>PyQt6</span><span>Gmail
+                                    API</span><span>OAuth2</span><span>AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Vy Food -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="700">
+                        <div class="project-image">
+                            <img src="assets/img/projects/webbh.jpg" alt="Vy Food Website" loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://pqtoannn.github.io/Webbanhang/" target="_blank" rel="noopener"
+                                    class="overlay-btn"><i class="bi bi-display"></i> Live Demo</a>
+                                <a href="https://github.com/pqtoannn/Webbanhang" target="_blank" rel="noopener"
+                                    class="overlay-btn"><i class="bi bi-github"></i> Source</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h3 class="project-title">Vy Food Website</h3><span class="project-role role-self">✦ Tự
+                                    xây dựng</span>
+                            </div>
+                            <p class="project-desc">Website đặt đồ ăn online responsive, giao diện hiện đại, SCSS
+                                modular, tối ưu hiệu năng tải trang.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SCSS</span><span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: PhoneShop -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="800">
+                        <div class="project-image">
+                            <img src="assets/img/projects/phoneshop.jpg" alt="PhoneShop" loading="lazy" />
+                            <div class="project-overlay">
+                                <a href="https://github.com/pqtoannn/PhoneShop" target="_blank" rel="noopener"
+                                    class="overlay-btn"><i class="bi bi-github"></i> Source</a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-title-row">
+                                <h3 class="project-title">PhoneShop Management</h3><span
+                                    class="project-role role-self">✦ Tự xây dựng</span>
+                            </div>
+                            <p class="project-desc">Ứng dụng desktop quản lý cửa hàng điện thoại, kiến trúc đa tầng
+                                (GUI/BUS/DTO/DAL), quản lý sản phẩm, nhân viên, hóa đơn.</p>
+                            <div class="project-tech">
+                                <span>Java</span><span>Swing</span><span>MySQL</span><span>NetBeans</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== EDUCATION ==================== -->
+        <section id="education" class="section education">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Học vấn</span>
+                    <h2 class="section-title">Education</h2>
+                </div>
+                <div class="education-grid">
+                    <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="edu-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                        <h3>Đại học Sài Gòn</h3>
+                        <p class="edu-degree">Kỹ sư Công nghệ Thông tin — Kỹ thuật Phần mềm</p>
+                        <p class="edu-year"><i class="bi bi-calendar3"></i> 2021 – 2026 (K21)</p>
+                        <p class="edu-desc">Kiến thức chuyên sâu về nguyên lý phần mềm, phát triển web, kiến trúc hệ
+                            thống. Thực hiện nhiều đồ án cá nhân và nhóm.</p>
+                    </div>
+                    <div class="edu-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="edu-icon"><i class="bi bi-award-fill"></i></div>
+                        <h3>Cybersoft Academy</h3>
+                        <p class="edu-degree">Frontend Development Certification</p>
+                        <p class="edu-year"><i class="bi bi-calendar3"></i> 11/2022 – Hiện tại</p>
+                        <p class="edu-desc">Khóa học Frontend chuyên sâu: HTML, CSS, JavaScript, React. Phát triển ứng
+                            dụng web tương tác và tối ưu UI/UX.</p>
+                    </div>
+                    <div class="edu-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="edu-icon"><i class="bi bi-book-fill"></i></div>
+                        <h3>Udemy & Self-learning</h3>
+                        <p class="edu-degree">Các khóa học bổ sung</p>
+                        <p class="edu-year"><i class="bi bi-calendar3"></i> Liên tục cập nhật</p>
+                        <p class="edu-desc">Tham gia các khóa học chuyên sâu trên Udemy để mở rộng kiến thức: Go,
+                            Microservices, AI/ML, DevOps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CONTACT ==================== -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-tag">Liên hệ</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <p class="section-subtitle">Sẵn sàng trao đổi về cơ hội thực tập, dự án hoặc hợp tác</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+                        <div class="contact-card">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <h3>Địa chỉ</h3>
+                            <p>601 Cách Mạng Tháng Tám, P.15, Q.10, TP.HCM</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="bi bi-telephone-fill"></i>
+                            <h3>Điện thoại</h3>
+                            <p><a href="tel:+84332620296">+84 332 620 296</a></p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="bi bi-envelope-fill"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:pqt190903@gmail.com">pqt190903@gmail.com</a></p>
+                        </div>
+                        <div class="contact-socials">
+                            <a href="https://github.com/pqtoannn" target="_blank" rel="noopener" title="GitHub"><i
+                                    class="bi bi-github"></i></a>
+                            <a href="https://www.linkedin.com/in/to%C3%A0n-ph%E1%BA%A1m-1086b7382/" target="_blank"
+                                rel="noopener" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.facebook.com/pham.quoc.toan.344646/" target="_blank" rel="noopener"
+                                title="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="mailto:pqt190903@gmail.com" title="Email"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
+                        <div class="contact-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.8434436566009!2d106.66740578221834!3d10.782657980230388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed1aafca113%3A0xe0a160fa089ea5e!2zNjAxLzczQiDEkC4gQ8OhY2ggTeG6oW5nIFRow6FuZyBUw6FtLCBQaMaw4budbmcgMTUsIFF14bqtbiAxMCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1746569792730!5m2!1svi!2s"
+                                width="100%" height="200" style="border:0; border-radius: 12px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper" data-aos="fade-left" data-aos-delay="300">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Họ và tên" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" placeholder="Tiêu đề" required />
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="5" placeholder="Nội dung tin nhắn..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="bi bi-send"></i> Gửi tin nhắn
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 <strong>Phạm Quốc Toàn</strong> — Designed & Built with ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <a href="#hero" class="scroll-top" id="scrollTop"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
